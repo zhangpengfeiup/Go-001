@@ -2,6 +2,7 @@
 
 没有使用Go写过项目，所以参考了krotas的目录结构
 
+```
 |- api                  # api目录是对外保留的proto文件及生成的pb.go文件
 |- cmd		        # 项目主干，main所在
 |   |-- myapp
@@ -17,4 +18,4 @@
 |   |--server            # server层，用于初始化grpc和http serverå
 |   |--service           # service层，用于业务逻辑处理
 |- test                  # 测试资源层
-
+```
