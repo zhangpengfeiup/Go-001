@@ -2,11 +2,17 @@
 
 用 Go 实现一个 tcp server ，用两个 goroutine 读写 conn，两个 goroutine 通过 chan 可以传递 message，能够正确退出
 1. 什么是 goroutine
+
 A goroutine is a lightweight thread of execution
+
 2. 什么是 chan
+
 Channels are the pipes that connect concurrent goroutines.You can send values into channels from one goroutine and receive those values into another goroutine.
+
 3. 什么是 tcp server
+
 提供tcp服务连接服务的服务器
+
 自己不会写，所以就参考了github 名为 ：cty898 同学的作业，也是自己抄的作业，诶。。。
 
 ```
