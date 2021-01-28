@@ -1,8 +1,18 @@
 了解了Hystrix 熔断器的原理
+
+
+![图片](http://tech.ipalfish.com/blog/images/dolphin/circuit_breaker_fsm.png)
+
+
 滑动窗口内桶的个数=滑动窗口时长/bucket时长
+
 bucket时长 = 滑动窗口时长/桶个数
+
 Hystrix 的滑动窗口计数我目前写不出来，参考网上了别人实现的滑动串口计数，使用了Go的ring (环形队列实现的滑动窗口)
+
 地址：https://studygolang.com/articles/26631
+
+```
 package main
 import (
     "fmt"
@@ -87,3 +97,4 @@ func checkError(err error) {
         os.Exit(1)
     }
 }
+```
